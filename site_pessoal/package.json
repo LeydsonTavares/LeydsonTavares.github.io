@@ -1,0 +1,23 @@
+{
+    "name": "site-pessoal-lt",
+    "version": "0.0.1",
+    "description": "Site pessoal implementado no curso de WEB da UNIFACISA",
+    "main": "index.html",
+    "dependencies": {
+        "git-repository": "^0.1.4"
+    },
+    "devDependencies": {},
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/LeydsonTavares/LeydsonTavares.github.io.git"
+    },
+    "author": "Leydson Tavares",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/LeydsonTavares/LeydsonTavares.github.io/issues"
+    },
+    "homepage": "https://github.com/LeydsonTavares/LeydsonTavares.github.io#readme"
+}
