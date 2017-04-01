@@ -1,0 +1,44 @@
+{
+    "resumo": [
+        "Graduando do 8º período de Sistemas de Informação pela Unifacisa, é Desenvolvedor de Software pela Upplify do Brasil, com especialidade no desenvolvimento Front-End.",
+        "Atualmente faz parte do Grupo de Desenvolvedores Google de Campina Grande e é voluntário no Rotaract Club de Campina Grande."
+    ],
+    "academico": [{
+            "data": "(2014 - 2017)",
+            "formacao": "Bacharel em Sistemas de Informação | Unifacisa [Previsto]"
+        },
+        {
+            "data": "(2010 - 2013)",
+            "formacao": "Bacharel em Ciência da Computação | UFPE [Interrompido]"
+        }
+    ],
+    "experiencia": [{
+            "data": "(Maio/2016 - Presente)",
+            "cargo": "Desenvolvedor Front-End | Upplify do Brasil"
+        },
+        {
+            "data": "(Agosto/2015 - Abril/2016)",
+            "cargo": "Desenvolvedor Front-End | INSS"
+        },
+        {
+            "data": "(Setembro/2014 - Fevereiro/2016)",
+            "cargo": "Project Manager | Laboratório de Tecnologia da Informação da UniFacisa"
+        },
+        {
+            "data": "(Novembro/2014 - Julho/2015)",
+            "cargo": "Pesquisador | Núcleo de Tecnologias Estratégicas em Saúde da UEPB"
+        },
+        {
+            "data": "(Agosto/2013 - Agosto/2014)",
+            "cargo": "Consultor de vendas | Ligue Site"
+        },
+        {
+            "data": "(Maio/2012 - Junho/2013)",
+            "cargo": "Pesquisador | Centro de Ciências Biológicas da UFPE"
+        },
+        {
+            "data": "(Janeiro/2010 - Dezembro/2010)",
+            "cargo": "Aluno à Oficial | Centro de Preparação de Oficiais da Reserva do Exército Brasileiro"
+        }
+    ]
+}

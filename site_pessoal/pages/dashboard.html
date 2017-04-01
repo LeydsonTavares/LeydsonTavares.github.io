@@ -3,3 +3,15 @@
         <h1 class="title"> Painel de Controle </h1>
     </div>
 </section>
+<section>
+    <div>
+        <h1 class="title"> Orçamento </h1>
+        <div class="content">
+            <p ng-repeat="orcamento in listOrcamentos">
+                <span>{{orcamento.titulo}}</span>
+                <span>{{orcamento.contato}}</span>
+                <span>{{orcamento.descricao}}</span>
+            </p>
+        </div>
+    </div>
+</section>

@@ -3,7 +3,7 @@
         <h1 class="title"> Resumo </h1>
         <!-- tag utilizada para escrever paragrafos -->
         <div>
-            <p class="content" ng-repeat="paragrafo in resumo">{{paragrafo}}</p>
+            <p class="content" ng-repeat="paragrafo in curriculo.resumo">{{paragrafo}}</p>
         </div>
     </div>
 </section>
@@ -12,7 +12,7 @@
 
         <h1 class="title"> Acadêmico </h1>
         <ul>
-            <li class="content" ng-repeat="item in academico">
+            <li class="content" ng-repeat="item in curriculo.academico">
                 <b>{{item.data}}<b>
                     {{item.formacao}}
                 </li>
@@ -21,10 +21,13 @@
 </section>
 <section>
         <div>
-            <h1 class="title"> Experiências </h1>
-            <!-- tag utilizada para escrever paragrafos -->
-            <p class="content">Bibliotecário</p>
-            <p class="content">Operador de Caixa</p>
+        <h1 class="title"> Experiências </h1>
+        <ul>
+            <li class="content" ng-repeat="item in curriculo.experiencia">
+                <b>{{item.data}}<b>
+                    {{item.cargo}}
+                </li>
+            </ul>   
         </div>
 </section>
 
@@ -33,17 +36,17 @@
             <h1 class="title"> Solicitação de orçamento </h1>
          <form class="content">
              <label for="titulo">Titulo</label>
-             <input type="text" name = "titulo"ng-model="slcOrcamento.titulo">
+             <input type="text" name = "titulo"ng-model="orcamento.titulo" required>
              <label for="contato">Contato</label>
-             <input type="text" name = "contato"ng-model="slcOrcamento.contato">
+             <input type="text" name = "contato"ng-model="orcamento.contato" required>
              <label for="descrição">Descrição</label>
-             <input type="text" name = "descricao"ng-model="slcOrcamento.descricao">
-             <button ng-click="solicitarOrcamento(slcOrcamento)">Solicitar</button>
+             <input type="text" name = "descricao"ng-model="orcamento.descricao" required>
+             <button ng-click="solicitarOrcamento()">Solicitar</button>
          </form>
         </div>
 </section>
 
-<section>
+<!--<section>
     <div>
         <h1 class="title"> Orçamento </h1>
         <div class="content">
@@ -54,4 +57,4 @@
             </p>
         </div> 
     </div>
-</section>
+</section>-->
