@@ -40,8 +40,10 @@
              <label for="contato">Contato</label>
              <input type="text" name = "contato"ng-model="orcamento.contato" required>
              <label for="descrição">Descrição</label>
-             <input type="text" name = "descricao"ng-model="orcamento.descricao" required>
-             <button ng-click="solicitarOrcamento()">Solicitar</button>
+             <textarea type="text" name = "descricao"ng-model="orcamento.descricao"></textarea>
+             <div class="button-container"> 
+                  <button ng-click="solicitarOrcamento()">Solicitar</button>
+             </div>
          </form>
         </div>
 </section>
