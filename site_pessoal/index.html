@@ -1,47 +1,39 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="sitePessoal">
 <!-- Arquivos de config, ficam todos na head -->
-	<head>
-		<meta charset = "UTF-8">
-		<meta name="viewport" content="width=device-width,initial-scale=1.0">
-		<link href="style/style.css" rel="stylesheet">
-		<title> Leydson Tavares </title>
-		<link rel="icon" type="image/jpg" href="style/img/myImagem.jpg" />
-	</head>
 
-	<body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link href="styles/allstyle.css" rel="stylesheet">
+    <title> {{nome}} </title>
+    <link rel="icon" type="image/jpg" href="img/myImagem.jpg" />
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/angular_material/0.11.2/angular-material.min.css">
+</head>
 
-		<header>
-			 <!-- Regras do H, quanto maior o numero menor o tamanho da letra -->
-             <h1 class="title" id="nomePessoa"></h1> 
-             <img class = "profile_picture" id="fotoPessoa">
-             <h2 class="title" id="cargoPessoa" ></h2>
-		</header>
-		<section>		
-		     <div>
-		     	<h1 class="title"> Resumo </h1>
-		     	<!-- tag utilizada para escrever paragrafos -->
-		     	<p class="content">Graduado 6º período no curso de Sistemas de Informação</p>
-		     </div>
-		</section>
-		<section>		
-		     <div>
-		     	<h1 class="title"> Acadêmico </h1>
-		     	<!-- tag utilizada para escrever paragrafos -->
-		     	<p class="content">Graduado 6º período no curso de Sistemas de Informação</p>
-		     </div>
-		</section>
-		<section>		
-		     <div>
-		     	<h1 class="title"> Experiências </h1>
-		     	<!-- tag utilizada para escrever paragrafos -->
-		     	<p class="content">Graduado 6º período no curso de Sistemas de Informação</p>
-		     </div>
-		</section>
+<body ng-controller="appController">
 
-		<footer>
-             <span>Copyright &copy; Leydson Tavares - 2017</span>
-		</footer>
-		<script src="javaScript/script.js"></script>
-	</body>
+    <header>
+        <!-- Regras do H, quanto maior o numero menor o tamanho da letra -->
+        <h1 class="title"> {{nome}}</h1>
+        <img class="profile_picture" ng-src="{{foto}}">
+        <h2 class="title">{{cargo}}</h2>
+    </header>
+
+    <ng-view></ng-view>
+
+    <footer>
+        <span>Copyright &copy; {{nome}} - {{ano}}</span>
+    </footer>
+
+    <!--LIBRARIES-->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-route.js"></script>
+
+    <!--SCRIPTS-->
+
+    <script src="javaScript/app.js"></script>
+    <script src="javaScript/app.config.js"></script>
+</body>
 <html>

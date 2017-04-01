@@ -1,0 +1,57 @@
+<section>
+    <div>
+        <h1 class="title"> Resumo </h1>
+        <!-- tag utilizada para escrever paragrafos -->
+        <div>
+            <p class="content" ng-repeat="paragrafo in resumo">{{paragrafo}}</p>
+        </div>
+    </div>
+</section>
+<section>
+    <div>
+
+        <h1 class="title"> Acadêmico </h1>
+        <ul>
+            <li class="content" ng-repeat="item in academico">
+                <b>{{item.data}}<b>
+                    {{item.formacao}}
+                </li>
+            </ul>   
+        </div>
+</section>
+<section>
+        <div>
+            <h1 class="title"> Experiências </h1>
+            <!-- tag utilizada para escrever paragrafos -->
+            <p class="content">Bibliotecário</p>
+            <p class="content">Operador de Caixa</p>
+        </div>
+</section>
+
+<section>
+        <div>
+            <h1 class="title"> Solicitação de orçamento </h1>
+         <form class="content">
+             <label for="titulo">Titulo</label>
+             <input type="text" name = "titulo"ng-model="slcOrcamento.titulo">
+             <label for="contato">Contato</label>
+             <input type="text" name = "contato"ng-model="slcOrcamento.contato">
+             <label for="descrição">Descrição</label>
+             <input type="text" name = "descricao"ng-model="slcOrcamento.descricao">
+             <button ng-click="solicitarOrcamento(slcOrcamento)">Solicitar</button>
+         </form>
+        </div>
+</section>
+
+<section>
+    <div>
+        <h1 class="title"> Orçamento </h1>
+        <div class="content">
+            <p ng-repeat="orcamento in listOrcamentos">
+                <span>{{orcamento.titulo}}</span>
+                <span>{{orcamento.contato}}</span>
+                <span>{{orcamento.descricao}}</span>
+            </p>
+        </div> 
+    </div>
+</section>
